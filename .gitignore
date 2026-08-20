@@ -1,0 +1,13 @@
+# Bỏ qua tệp cấu hình chứa mật khẩu DB
+wp-config.php
+
+# Bỏ qua các tệp upload nặng (tùy chọn)
+wp-content/uploads/
+
+# Bỏ qua các tệp cache và log
+*.log
+.htaccess
+# Bỏ qua tất cả các file sao lưu cơ sở dữ liệu SQL
+*.sql
+*.sql.gz
+*.zip

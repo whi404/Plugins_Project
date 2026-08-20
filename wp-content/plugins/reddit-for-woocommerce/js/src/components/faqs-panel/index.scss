@@ -1,0 +1,16 @@
+.rfw-faqs-panel {
+	.components-panel__row {
+		display: block;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	.components-panel__body-title {
+		.components-panel__body-toggle.components-button {
+			padding-block-end: wpVariables.$grid-unit-05 * 5;
+			padding-block-start: wpVariables.$grid-unit-05 * 5;
+		}
+	}
+}
