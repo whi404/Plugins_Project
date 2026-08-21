@@ -1,0 +1,295 @@
+.kmm-wrap {
+    max-width: 1200px;
+    margin-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.kmm-header {
+    margin-bottom: 24px;
+}
+
+.kmm-header h1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e2130;
+    margin-bottom: 4px;
+}
+
+.kmm-header h1 .dashicons {
+    font-size: 26px;
+    width: 26px;
+    height: 26px;
+    color: #6c5ce7;
+}
+
+.kmm-subtitle {
+    color: #6b7280;
+    font-size: 14px;
+    margin: 0;
+}
+
+.kmm-notice {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #eafaf1;
+    border: 1px solid #b7ebc6;
+    color: #1e7e34;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.kmm-grid {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+@media (max-width: 960px) {
+    .kmm-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.kmm-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    border: 1px solid #eef0f4;
+}
+
+.kmm-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 18px 0;
+    color: #1e2130;
+}
+
+/* FORM */
+.kmm-field {
+    margin-bottom: 16px;
+}
+
+.kmm-field label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+.kmm-field input[type="text"],
+.kmm-field input[type="number"],
+.kmm-field input[type="datetime-local"],
+.kmm-field textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: none;
+    transition: border-color 0.15s ease;
+}
+
+.kmm-field input:focus,
+.kmm-field textarea:focus {
+    border-color: #6c5ce7;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(108,92,231,0.12);
+}
+
+.kmm-field textarea {
+    resize: vertical;
+}
+
+.kmm-field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+@media (max-width: 480px) {
+    .kmm-field-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.kmm-percent-input {
+    position: relative;
+}
+
+.kmm-percent-input input {
+    padding-right: 32px;
+}
+
+.kmm-percent-input span {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    font-size: 13px;
+    pointer-events: none;
+}
+
+.kmm-form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.kmm-btn-primary.button-primary {
+    background: #6c5ce7;
+    border-color: #6c5ce7;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    height: auto;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.kmm-btn-primary.button-primary:hover {
+    background: #5b4bd6;
+    border-color: #5b4bd6;
+}
+
+.kmm-btn-cancel {
+    border-radius: 8px !important;
+}
+
+/* LIST */
+.kmm-empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: #9ca3af;
+}
+
+.kmm-empty .dashicons {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+}
+
+.kmm-table-wrap {
+    overflow-x: auto;
+}
+
+.kmm-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+}
+
+.kmm-table th {
+    text-align: left;
+    padding: 10px 12px;
+    color: #6b7280;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 2px solid #f1f2f6;
+}
+
+.kmm-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #f1f2f6;
+    vertical-align: middle;
+    color: #1e2130;
+}
+
+.kmm-table tr:last-child td {
+    border-bottom: none;
+}
+
+.kmm-table tr:hover td {
+    background: #fafaff;
+}
+
+.kmm-note-text {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 2px;
+}
+
+.kmm-percent-badge {
+    display: inline-block;
+    background: #fff0e6;
+    color: #e8590c;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12.5px;
+}
+
+.kmm-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.kmm-badge-active {
+    background: #eafaf1;
+    color: #1e9e5a;
+}
+
+.kmm-badge-upcoming {
+    background: #eaf1ff;
+    color: #2563eb;
+}
+
+.kmm-badge-ended {
+    background: #f3f4f6;
+    color: #6b7280;
+}
+
+.kmm-badge-off {
+    background: #fdeeee;
+    color: #dc3545;
+}
+
+.kmm-actions {
+    display: flex;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.kmm-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    color: #6b7280;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.kmm-icon-btn:hover {
+    background: #f1f2f6;
+    color: #1e2130;
+}
+
+.kmm-icon-btn .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.kmm-icon-danger:hover {
+    background: #fdeeee;
+    color: #dc3545;
+}
